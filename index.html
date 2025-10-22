@@ -1,0 +1,20 @@
+<html>
+  <head>
+  <meta charset="UTF-8">
+    <script src="./aframe.min.1_7_0.js"></script> 
+	<script src="./AR(Marker Tracking + Location Based AR).js"></script>
+  </head>
+  
+  <body>
+<a-scene embedded arjs>
+
+  <a-marker preset="custom" url="./myMarker.patt">
+  <a-box  id="target" class="clickable" color="red" position="0 0 -2"></a-box>
+  </a-marker>
+  
+  <a-entity camera look-controls></a-entity>
+</a-scene>
+
+
+  </body>
+</html>
